@@ -1,0 +1,31 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "restaurantpage",
+  "main": "index.js",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FatmaBetulUyar/restaurantPage.git"
+  },
+  "keywords": [
+    "restaurant"
+  ],
+  "author": "betuluyar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FatmaBetulUyar/restaurantPage/issues"
+  },
+  "homepage": "https://github.com/FatmaBetulUyar/restaurantPage#readme",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
