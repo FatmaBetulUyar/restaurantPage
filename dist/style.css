@@ -1,0 +1,55 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: pink;
+    color:peru;
+  }
+.content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid;
+}
+h1{
+    color: white;
+    text-shadow: 1px 1px 2px pink, 0 0 1em peru, 0 0 0.2em peru;
+    font-size: 50px;
+}
+.subContent{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: pink;
+    margin: auto;
+}
+.restaurantImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.restaurantImage > img{
+    width:70%;
+    height: auto;
+    border-radius: 50px;
+    display: block;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: width 2s, height 2s, transform 2s;
+}
+img:hover{
+    transform: rotate(10deg);
+}
+
+.aboutText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+    margin: 0 1%;
+    text-align: center;
+}
