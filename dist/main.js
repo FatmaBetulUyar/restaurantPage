@@ -1,6 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
   const content = document.getElementById("content");
 
+  //menu
+  const navbar = document.createElement("div");
+  navbar.classList.add("navbar");
+
+  //menu > home
+  const menuHomeDiv = document.createElement("div");
+  menuHomeDiv.classList.add("menuSection");
+  menuHomeDiv.textContent="Home";
+
+  //menu > menu
+  const menuDiv = document.createElement("div");
+  menuDiv.classList.add("menuSection");
+  menuDiv.textContent="Menu";
+
+  //menu > contact
+  const menuContactDiv = document.createElement("div");
+  menuContactDiv.classList.add("menuSection");
+  menuContactDiv.textContent="Contact";
+
+  navbar.appendChild(menuHomeDiv);
+  navbar.appendChild(menuDiv);
+  navbar.appendChild(menuContactDiv);
+
   //subcontent
   const subContent = document.createElement("div");
   subContent.classList.add("subContent");
@@ -46,5 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
   subContent.appendChild(aboutDiv);
 
   // add subcontent to content
+  content.appendChild(navbar);
   content.appendChild(subContent);
 });

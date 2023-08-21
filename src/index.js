@@ -10,5 +10,5 @@ function component() {
   }
   
   document.body.appendChild(component()); */
-
-  console.log("hello")
+  
+import  main  from "../dist/main"
