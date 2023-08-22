@@ -17,16 +17,33 @@ body, html {
     width: 50%;
     height: 80px;
     margin-bottom: 10px;
-    border: 10px;
+    border-radius: 10px;
     background-color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+.navbar > div:hover{
+    cursor: pointer;
+}
 h1{
     color: white;
     text-shadow: 1px 1px 2px pink, 0 0 1em peru, 0 0 0.2em peru;
     font-size: 50px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+h1:hover{
+    color: #432C7A !important;
+    font-weight: bold !important;
+    letter-spacing: 3px;
+    background: #FCE2DB;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.3s ease 0s;
 }
 .subContent{
     width: 80%;

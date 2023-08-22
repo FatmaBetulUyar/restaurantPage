@@ -8,16 +8,19 @@ document.addEventListener("DOMContentLoaded", function () {
   //menu > home
   const menuHomeDiv = document.createElement("div");
   menuHomeDiv.classList.add("menuSection");
+  menuHomeDiv.setAttribute('id','menuSectionHome')
   menuHomeDiv.textContent="Home";
 
   //menu > menu
   const menuDiv = document.createElement("div");
   menuDiv.classList.add("menuSection");
+  menuHomeDiv.setAttribute('id','menuSectionMenu')
   menuDiv.textContent="Menu";
 
   //menu > contact
   const menuContactDiv = document.createElement("div");
   menuContactDiv.classList.add("menuSection");
+  menuHomeDiv.setAttribute('id','menuSectionContact')
   menuContactDiv.textContent="Contact";
 
   navbar.appendChild(menuHomeDiv);
@@ -71,4 +74,5 @@ document.addEventListener("DOMContentLoaded", function () {
   // add subcontent to content
   content.appendChild(navbar);
   content.appendChild(subContent);
+
 });
