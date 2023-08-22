@@ -11,31 +11,39 @@ function component() {
   
   document.body.appendChild(component()); */
 
-import  main  from "../dist/main"
 import loadContact from "./contact";
 import loadHome from "./home";
-import loadMenu from "./menu"
+import loadMenu from "./menu";
+
+import navbar from "./navbar";
 
 
 document.addEventListener("DOMContentLoaded", function () {
-const home = document.getElementById("menuSectionHome");
-const menu = document.getElementById("menuSectionMenu");
-const contact = document.getElementById("menuSectionContact");
+  navbar();
 
- //menu click events
-  home.addEventListener("click", ()=>{
+  const home = document.getElementById("menuSectionHome");
+  const menu = document.getElementById("menuSectionMenu");
+  const contact = document.getElementById("menuSectionContact");
+  const subContent = document.getElementById("subContent");
+  const subContentHome= document.getElementById("homeDiv");
+
+  home.addEventListener("click", () => {
     console.log("tiklandi");
     loadHome();
-  }) 
+  });
 
-  menu.addEventListener("click", ()=>{
+  menu.addEventListener("click", () => {
     console.log("tiklandi");
     loadMenu();
-  })
-
-  contact.addEventListener("click", ()=>{
+    //reset();
+  });
+  contact.addEventListener("click", () => {
     console.log("tiklandi");
     loadContact();
-  })
+   // reset();
+  });
 
-})
+  const reset = ()=>{
+    subContent.innerHTML="";
+  }
+});

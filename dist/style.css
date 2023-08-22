@@ -1,19 +1,28 @@
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: pink;
-    color:peru;
-  }
-.content{
+    color: peru;
+}
+
+.content {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
-.navbar{
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
     width: 50%;
     height: 80px;
     margin-bottom: 10px;
@@ -23,10 +32,12 @@ body, html {
     justify-content: space-evenly;
     align-items: center;
 }
-.navbar > div:hover{
+
+.navbar>div:hover {
     cursor: pointer;
 }
-h1{
+
+h1 {
     color: white;
     text-shadow: 1px 1px 2px pink, 0 0 1em peru, 0 0 0.2em peru;
     font-size: 50px;
@@ -36,16 +47,18 @@ h1{
     display: inline-block;
     transition: all 0.3s ease 0s;
 }
-h1:hover{
+
+h1:hover {
     color: #432C7A !important;
     font-weight: bold !important;
     letter-spacing: 3px;
     background: #FCE2DB;
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
     transition: all 0.3s ease 0s;
 }
-.subContent{
+
+.subContent {
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -54,29 +67,29 @@ h1:hover{
     background-color: pink;
     margin: auto;
 }
-.restaurantImage{
+
+.restaurantImage {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.restaurantImage > img{
-    width:70%;
+
+.restaurantImage>img {
+    width: 70%;
     height: auto;
     border-radius: 50px;
     display: block;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     transition: width 2s, height 2s, transform 2s;
 }
-img:hover{
+
+img:hover {
     transform: rotate(10deg);
 }
 
-.aboutText{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.aboutDiv {
     width: 80%;
-    align-items: center;
+    display: contents;
     margin: 0 1%;
     text-align: center;
 }

@@ -7,11 +7,12 @@ function createContact() {
 }
 
 function loadContact(){
-    const content = document.getElementById("content");
-    const subContent = document.querySelector(".subContent");
-    content.removeChild(subContent);
-
-    content.appendChild(createContact());
+    const subContent = document.getElementById("subContent");
+    //content.removeChild(subContent);
+    // Bu fonksiyon içinde homeDiv oluşturulmalı
+  
+    const homeDiv = createContact();
+    subContent.appendChild(homeDiv);
 }
 
 export default loadContact;

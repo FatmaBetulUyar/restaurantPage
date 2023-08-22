@@ -7,11 +7,13 @@ function createMenu() {
 }
 
 function loadMenu(){
-    const content = document.getElementById("content");
-    const subContent = document.querySelector(".subContent");
-    content.removeChild(subContent);
 
-    content.appendChild(createMenu());
+    const subContent = document.getElementById("subContent");
+    //content.removeChild(subContent);
+    // Bu fonksiyon içinde homeDiv oluşturulmalı
+  
+    const homeDiv = createMenu();
+    subContent.appendChild(homeDiv);
 }
 
 export default loadMenu;
