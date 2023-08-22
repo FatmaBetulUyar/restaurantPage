@@ -1,6 +1,4 @@
 
-
-
 function createDiv(className, id, textContent) {
   const menuDiv = document.createElement("div");
   menuDiv.classList.add(className);
@@ -35,12 +33,10 @@ function navbar() {
   navbarMenu.appendChild(menuDiv);
   navbarMenu.appendChild(menuContactDiv);
 
-  //subcontent
-  const subContent = createDiv("subContent", "subContent", "");
 
   // add subcontent to content
   content.appendChild(navbarMenu);
-  content.appendChild(subContent);
+  
 }
 
 export default navbar;

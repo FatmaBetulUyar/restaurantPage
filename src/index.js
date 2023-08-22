@@ -12,38 +12,42 @@ function component() {
   document.body.appendChild(component()); */
 
 import loadContact from "./contact";
+import createContent from "./content";
 import loadHome from "./home";
 import loadMenu from "./menu";
 
 import navbar from "./navbar";
 
-
 document.addEventListener("DOMContentLoaded", function () {
   navbar();
-
+  createContent();
   const home = document.getElementById("menuSectionHome");
   const menu = document.getElementById("menuSectionMenu");
   const contact = document.getElementById("menuSectionContact");
   const subContent = document.getElementById("subContent");
-  const subContentHome= document.getElementById("homeDiv");
 
   home.addEventListener("click", () => {
+    reset();
+    createContent();
     console.log("tiklandi");
     loadHome();
   });
 
   menu.addEventListener("click", () => {
+    reset();
+    createContent();
     console.log("tiklandi");
     loadMenu();
     //reset();
   });
   contact.addEventListener("click", () => {
+    reset();
+    createContent();
     console.log("tiklandi");
     loadContact();
-   // reset();
   });
 
-  const reset = ()=>{
-    subContent.innerHTML="";
-  }
+  const reset = () => {
+    subContent.innerHTML = "";
+  };
 });
